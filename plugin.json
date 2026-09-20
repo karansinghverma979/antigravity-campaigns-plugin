@@ -1,0 +1,5 @@
+{
+  "name": "campaigns-plugin",
+  "description": "Strategic command center, daily strike execution engine, financial treasury HUD, and Obsidian SQLite bridge for Google Antigravity",
+  "version": "1.0.0"
+}

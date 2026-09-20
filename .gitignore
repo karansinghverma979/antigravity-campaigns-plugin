@@ -8,6 +8,13 @@
 *.bak
 campaigns.sqlite
 
+# Secrets & Environment Variables
+.env
+.env.*
+*.env
+*.key
+*.pem
+
 # Python Bytecode & Environments
 __pycache__/
 *.py[cod]
@@ -16,8 +23,18 @@ venv/
 .venv/
 env/
 ENV/
+build/
+dist/
+*.egg-info/
+
+# Dynamic Local State & Logs
+.local/
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
 
 # System & OS Files
 .DS_Store
 Thumbs.db
-*.log
+desktop.ini

@@ -1,44 +1,44 @@
 <div align="center">
 
-# ⚔️ ANTIGRAVITY CAMPAIGNS MCP SERVER
+# ⚔️ Antigravity Campaigns Plugin
 
-### *Authoritative SQLite State-Machine, Multi-Minister Governance & Financial Treasury Suite for AI Agents*
+### *High-Speed Strategic Task Engine, Tactical Strike Coordinator & Double-Entry Treasury HUD for AI Agents*
 
 <br/>
 
-<a href="https://github.com/karansinghverma979/antigravity-campaigns-mcp">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=E53935&center=true&vCenter=true&multiline=true&width=750&height=100&lines=Tactical+Campaign+State-Machine+(4+Stages);Multi-Minister+Governance+(Adhipati%2C+Bhakta%2C+Antaryami%2C+Jigyasu);Financial+Treasury+%26+Counterparty+Ledger;Automated+Database+Integrity+%26+Health+Audits" alt="Typing SVG" />
+<a href="https://github.com/karansinghverma979/antigravity-campaigns-plugin">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E53935&center=true&vCenter=true&multiline=true&width=780&height=100&lines=Lightweight+Tactical+Project+Management;Hierarchical+Checkpoints+%26+Daily+Directives;Double-Entry+Cash+Flow+Treasury+%26+Counterparty+Ledger;Sub-Millisecond+SQLite+WAL+Engine+(Zero-Bloat)" alt="Typing SVG" />
 </a>
 
 <br/>
 <br/>
 
-<!-- Shields Row 1: Platform & Framework -->
+<!-- Shields Row 1: Ecosystem & Architecture -->
 <p align="center">
+  <a href="https://github.com/karansinghverma979/antigravity-campaigns-plugin">
+    <img src="https://img.shields.io/badge/Antigravity-Plugin_Ready-7C4DFF?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity Plugin" />
+  </a>
   <a href="https://modelcontextprotocol.io">
     <img src="https://img.shields.io/badge/MCP-Protocol_1.0-8A2BE2?style=for-the-badge&logo=anthropic&logoColor=white" alt="MCP Protocol" />
   </a>
   <a href="https://sqlite.org">
-    <img src="https://img.shields.io/badge/SQLite-WAL_Mode-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-  </a>
-  <a href="https://python.org">
-    <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
+    <img src="https://img.shields.io/badge/SQLite-WAL_Mode-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite WAL" />
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge" alt="MIT License" />
   </a>
 </p>
 
-<!-- Shields Row 2: Capabilities & Standards -->
+<!-- Shields Row 2: Security & Supply Chain -->
 <p align="center">
+  <img src="https://img.shields.io/badge/OpenSSF-Hardened_CI-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white" alt="OpenSSF CI" />
+  <img src="https://img.shields.io/badge/Security-Zero_Path_Leaks-00E676?style=for-the-badge&logo=shield&logoColor=white" alt="Zero Path Leaks" />
+  <img src="https://img.shields.io/badge/Token_Optimization-85%25_Payload_Reduction-00B0FF?style=for-the-badge&logo=speedtest&logoColor=white" alt="Token Optimized" />
   <img src="https://img.shields.io/badge/Tools-20_Operations-FF3D00?style=for-the-badge&logo=hammer&logoColor=white" alt="20 MCP Tools" />
-  <img src="https://img.shields.io/badge/Integrity-Foreign_Keys_ON-00E676?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Foreign Keys Enforced" />
-  <img src="https://img.shields.io/badge/Data_Safety-Zero_Data_Leak-brightgreen?style=for-the-badge&logo=shield&logoColor=white" alt="Zero Data Leak" />
-  <img src="https://img.shields.io/badge/Architecture-CQRS_Treasury-00B0FF?style=for-the-badge&logo=blueprint&logoColor=white" alt="CQRS Architecture" />
 </p>
 
 <p align="center">
-  <b>Empower your AI assistant with a high-speed relational lifecycle engine for strategic planning, tactical daily strikes, subtask trees, counterparty relationships, and cash flow governance.</b>
+  <b>A production-grade, zero-bloat productivity operating system. Manage high-level projects, daily micro-tasks, milestone trees, client counterparties, and financial runway at wire speed with native AI agent integration.</b>
 </p>
 
 ---
@@ -47,164 +47,151 @@
 
 <br/>
 
-## 📑 Table of Contents
-- [✨ Core Capabilities](#-core-capabilities)
-- [🏛️ System Architecture](#️-system-architecture)
-- [⚡ AI-First Architecture](#-ai-first-architecture)
-- [🛠️ Tool Catalog (20 Operations)](#️-tool-catalog-20-operations)
-- [📊 Database Schema & LifeCycle](#-database-schema--lifecycle)
-- [🚀 Quickstart & Setup](#-quickstart--setup)
-- [⚙️ Client Configurations](#️-client-configurations)
-  - [Antigravity CLI](#antigravity-cli)
-  - [Claude Desktop](#claude-desktop)
-- [📐 Tactical Guardrails & Invariants](#-tactical-guardrails--invariants)
-- [📄 License](#-license)
+## 📖 The Story Behind Campaigns: Why We Built This
+
+Heavyweight productivity platforms and complex enterprise managers (like Stratagem) offer deep features, but come at a steep operational cost: heavy system resource consumption, slow database latencies, background bloat, and clunky interfaces.
+
+**Campaigns was born from a simple realization**:
+> *You don't need gigabytes of electron bloat or cloud vendor lock-in to achieve peak personal execution. You need a rock-solid, sub-millisecond local relational state machine that your AI assistant can drive effortlessly.*
+
+Campaigns strikes the perfect balance:
+- **Ultra-Lightweight**: Instantaneous execution via a single local SQLite database in WAL mode.
+- **Zero Resource Waste**: Runs locally on your machine with near-zero RAM footprint.
+- **Sovereign & Private**: 100% of your goals, contacts, and financial records remain on your local disk.
+- **Dual Personality**: Use straightforward productivity terminology or high-discipline tactical terminology—both map to the same clean relational schema.
 
 ---
 
-## ✨ Core Capabilities
+## 🗺️ Dual Terminology Bridge: Everyday Productivity vs. Tactical Command
 
-- 🏛️ **4-Minister Governance Model**: Directive assignment across specialized domains:
-  - **`Adhipati`**: Macro-Strategy, Legal, Recruitment, High-Order Decisions, Financial Governance.
-  - **`Bhakta`**: Devotion to Duty, Physical Execution, Daily Disciplines, Engineering Craftsmanship.
-  - **`Antaryami`**: Inner Observer, Self-Reflection, Psychological Constitution, Alignment.
-  - **`Jigyasu`**: Intellectual Mastery, 366 Laws, Continuous Learning.
-- ⚡ **High-Speed Relational Engine**: Direct SQLite access in WAL mode with sub-millisecond query latency.
-- 💰 **Relational Treasury & Counterparties**: Track payables, receivables, debt dues, invoices, and partial payment history with live computed net balances.
-- 🌳 **Hierarchical Subtask Trees**: Multi-level subtasks (`Initiated` ➔ `Doing` ➔ `Completed` / `Failed`).
-- 🎯 **Daily Tactical Strikes**: Track daily battle directives with strict completion status (`Neutralized`).
-- 🩺 **Automated Health Auditor**: `campaigns_audit_health` detects orphaned strikes, overdue deadlines, and stale directives in a single pass.
-- 🛡️ **Zero Secret / Data Leaks**: Database location is fully configurable; schemas and initializers keep personal state isolated.
+Whether you think like a software project manager or a tactical operational commander, Campaigns speaks your language:
+
+| Everyday Productivity Concept | Tactical Command Term | Description & Purpose |
+| :--- | :--- | :--- |
+| **Project / Strategic Goal** | **`Campaign` / `Task`** | Multi-week outcome transitioning through `Arsenal` ➔ `Execution` ➔ `Archive`. |
+| **Daily Action Item** | **`Strike`** | High-priority micro-task scheduled for today. When finished, it is `Neutralized`. |
+| **Milestone / Checkpoint** | **`Subtask`** | Ordered checkpoint in a project tree (`Initiated` ➔ `Doing` ➔ `Completed`). |
+| **Focus Domain** | **`Minister`** | 4 life pillars: Leadership (`Adhipati`), Craft (`Bhakta`), Reflection (`Antaryami`), Learning (`Jigyasu`). |
+| **Cash Flow / Ledger** | **`Treasury`** | Inflow (`Receivable`) and outflow (`Payable`) tracker with 7-day and 30-day runway horizons. |
+| **Contacts & Clients** | **`Counterparties`** | Individuals and companies with live calculated net credit/debit balances. |
 
 ---
 
 ## 🏛️ System Architecture
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                        AI AGENT RUNTIME ENGINE                         │
-│               (Antigravity CLI / Claude Desktop / Cursor)              │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │ JSON-RPC (stdio)
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│                   CAMPAIGNS MCP SERVER (server.py)                     │
-├────────────────────────────────────────────────────────────────────────┤
-│ 🛡️ Strict Whitelist & Type Sanitizer (Foreign Key Enforcement)        │
-├───────────────────────────────────┬────────────────────────────────────┤
-│ 📋 Task Lifecycle Engine          │ 🎯 Daily Strike Coordinator        │
-│ 🌳 Subtask Hierarchy Manager      │ 🏷️ Taxonomy & Tag Indexer          │
-│ 💰 Treasury & Obligations Manager │ 👥 Counterparty Directory Dossier  │
-│ 🩺 Health & Integrity Auditor     │ ⚡ Unrestricted SQL Engine         │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │ SQLite Driver (WAL Mode)
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│                   CAMPAIGNS RELATIONAL DATABASE                        │
-│             `%APPDATA%\Campaigns\Database\campaigns.sqlite`             │
-│   [ Tasks · Subtasks · Strikes · Tags · Counterparties · Treasury ]    │
-└────────────────────────────────────────────────────────────────────────┘
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       GOOGLE ANTIGRAVITY AGENT / MCP HOST                   │
+│                    (Antigravity CLI · Claude Desktop · Cursor)              │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │ JSON-RPC (stdio)
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    ANTIGRAVITY CAMPAIGNS PLUGIN (mcp/server.py)             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 🛡️ Strict Whitelist & Type Sanitizer (Foreign Key Enforcement)             │
+├──────────────────────────────────────┬──────────────────────────────────────┤
+│ 📋 Project Lifecycle Engine          │ 🎯 Daily Strike Coordinator          │
+│ 🌳 Subtask Checkpoint Hierarchy      │ 🏷️ Uppercase Taxonomy & Tag Indexer  │
+│ 💰 Double-Entry Treasury Ledger      │ 👥 Counterparty Directory Dossier    │
+│ 🩺 Health & Integrity Auditor        │ ⚡ Parameterized SQL Query Engine    │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │ SQLite WAL Driver (Sub-millisecond)
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        CAMPAIGNS SQLITE DATABASE                            │
+│                 `%APPDATA%\Campaigns\Database\campaigns.sqlite`             │
+│       [ Tasks · Subtasks · Strikes · Tags · Counterparties · Treasury ]     │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### ⚡ AI-First Architecture: "Minimum Token Consumption, Maximum Speed"
+## ⚡ AI-First Architecture: "Minimum Token Consumption, Maximum Speed"
 
-The server is architected from the ground up for autonomous AI agent operation, enforcing radical token efficiency and sub-millisecond execution velocity:
+Autonomous agents face tight context windows and round-trip latency. Campaigns is architected to minimize tokens and maximize speed:
 
-- 📉 **Compact List Payloads (80–85% Token Reduction)**: `campaigns_list_tasks` defaults to `include_description: false`, omitting lengthy mission briefings and debrief notes from query outputs. Agents consume only essential metadata (`id`, `title`, `state`, `stage`, `priority`, `deadline`) unless explicitly passing `include_description: true`.
-- 🌳 **1-Shot Multi-Subtask Inception**: `campaigns_create_task` accepts an optional `subtasks: ["Phase 1", "Phase 2"]` array. The server creates the campaign and all checkpoint subtasks in a **single atomic transaction**, slashing 4–6 tool calls down to 1.
-- 🎯 **1-Shot Relational Resolution**: `campaigns_create_strike` accepts `task_title` / `task_name` and `subtask_title` parameters. The server resolves foreign keys dynamically in a single SQL transaction—eliminating redundant `campaigns_list_tasks` round-trips.
-- ⚡ **Flat Top-Level Mutation Shortcuts**: `campaigns_update_task` and `campaigns_update_strike` accept parameters directly at the top level (e.g. `status="Neutralized"`, `stage="Executing"`), omitting verbose nested `fields: {}` dictionaries.
-- 📅 **Deterministic Relative Date Engine**: `sanitize_date` natively parses natural relative expressions (`today`, `tomorrow`, `+3d`, `+2w`, `+1m`, `eom`, `monday`, `friday`), eliminating agent mental date math and calculation errors.
-- 💰 **Horizon-Segmented Runway Telemetry**: `campaigns_get_treasury_dashboard` delivers immediate 7-day and 30-day imminent payables and receivables runway (`imminent_runway`), providing instant cash flow foresight.
-- 📝 **Markdown-Lite Standardization**: Built-in validation ensures descriptive multiline text fields remain short, simple, structured (`- ` bullets, `1. ` lists, `> ` quotes), and free of conversational essay bloat.
+- 📉 **Compact List Payloads (80–85% Token Reduction)**: `campaigns_list_tasks` defaults to `include_description: false`, omitting multiline text to preserve LLM context. Set `include_description: true` only when inspecting a single task runbook.
+- 🌳 **1-Shot Multi-Subtask Inception**: Pass `subtasks: ["Milestone 1", "Milestone 2"]` directly to `campaigns_create_task`. The server creates the project and its entire milestone tree in a single atomic transaction—turning 5 tool calls into 1.
+- 🎯 **1-Shot Foreign-Key Resolution**: Pass `task_title` directly to `campaigns_create_strike`. The server dynamically resolves foreign keys in SQLite, eliminating redundant search calls.
+- ⚡ **Flat Top-Level Mutation Shortcuts**: Update arguments directly at the top level without verbose nested `fields: {}` payloads.
+- 📅 **Deterministic Relative Date Engine**: Pass natural expressions like `today`, `tomorrow`, `+3d`, `+2w`, `+1m`, `eom`, `monday`, or `friday`. The server parses exact calendar dates natively.
+- 💰 **Horizon-Segmented Runway Telemetry**: `campaigns_get_treasury_dashboard` delivers immediate 7-day and 30-day cash flow runways in a single pass.
 
 ---
 
-## 🛠️ Tool Catalog (20 Operations)
+## 🛠️ Tool Catalog (20 Native Operations)
 
 | Category | MCP Tool Name | Description |
 | :--- | :--- | :--- |
-| **🩺 Health & HUD** | `campaigns_get_dashboard` | Live overview of active campaigns, pending strikes, and operational health. |
-| | `campaigns_audit_health` | Full database integrity scan across campaigns, strikes, subtasks, and treasury. |
-| **📋 Tasks** | `campaigns_list_tasks` | List and filter campaigns by state (`Arsenal`, `Execution`, `Breach`, `Archive`), stage, or priority. |
-| | `campaigns_get_task_details`| Deep query returning task attributes, subtask tree, connected strikes, and tags. |
-| | `campaigns_create_task` | Create a new campaign with priority, state stage, origin date, deadline, optional 1-shot `subtasks`, and optional Markdown-Lite mission briefing (`description`). |
-| | `campaigns_update_task` | Update task fields (state transitions, deadlines, stages, `description`, `end_note`) with relational integrity. |
-| | `campaigns_delete_task` | Cascade deletion of a campaign and its associated subtasks and strikes. |
-| **🎯 Strikes** | `campaigns_list_strikes` | List daily strikes filtered by execution date (`DD-MM-YYYY` or relative date), status, or Minister. |
-| | `campaigns_create_strike` | Create a daily tactical strike assigned to a Minister with 1-shot task title resolution, recurrence ID, and clean Markdown-Lite `notes`. |
-| | `campaigns_update_strike` | Update strike status (`Standby`, `Engaged`, `Neutralized`, `Aborted`, `Pending`, `Template`, `Undated`), date, or Markdown-Lite `notes`. Supports flat top-level shortcuts. |
-| | `campaigns_delete_strike` | Remove a strike from the tactical schedule. |
-| **🌳 Subtasks & Tags**| `campaigns_manage_subtask` | Create, update status (`Initiated`, `Doing`, `Completed`, `Failed`), or delete subtask nodes. |
-| | `campaigns_manage_tag` | Attach or detach uppercase taxonomy tags (`GOVT`, `RECRUITMENT`, `MOTOR_WINDING`). |
-| **💰 Treasury & Finance**| `campaigns_get_treasury_dashboard`| 1-shot financial summary: payables due, receivables due, 7-day & 30-day runway horizons, net position, overdues. |
-| | `campaigns_list_treasury` | Filter financial obligations across `flow_type` (`Payable`/`Receivable`), `state` (`Open`/`Closed`), `status` (`In Progress`, `Partially Paid`, `Pending`, `Disputed`, `Paid`, `Settled`, `Defaulted`), `category`, and `counterparty_id`. |
-| | `campaigns_manage_treasury` | Create obligations, update terms, record partial payments, or delete records. Supports flat top-level arguments (`status`, `state`, `amount`, etc.) and clean Markdown-Lite notes. |
-| **👥 Counterparties**| `campaigns_list_counterparties` | Directory of persons and entities with live computed net balances, total dues, and `activity` filter (`Active`, `Dormant`, `Banned`, `Defaulted`). |
-| | `campaigns_get_counterparty_dossier` | Deep 360° relationship dossier and complete chronological transaction ledger. |
-| | `campaigns_manage_counterparty` | Create, update, or remove counterparty entities (supports flat shortcuts and Markdown-Lite `comment`). |
-| **⚡ SQL Engine** | `campaigns_execute_sql` | Execute unrestricted custom SQL queries and transactions with automatic rollback safety. |
-
----
-
-## 📊 Database Schema & LifeCycle
-
-### State Lifecycle Machine
-```text
-┌─────────────┐       ┌───────────────┐       ┌────────────┐       ┌─────────────┐
-│   Arsenal   │ ───►  │   Execution   │ ───►  │   Breach   │ ───►  │   Archive   │
-│ (Raw Intel) │       │   (Active)    │       │ (Overdue)  │       │  (Victory)  │
-└─────────────┘       └───────────────┘       └────────────┘       └─────────────┘
-```
+| **🩺 Health & HUD** | `campaigns_get_dashboard` | Live overview of active projects, pending daily strikes, and Minister distribution. |
+| | `campaigns_audit_health` | Full database integrity scan: detects orphaned records, overdue deadlines, and stale tasks. |
+| **📋 Projects / Tasks** | `campaigns_list_tasks` | Filter projects by state (`Arsenal`, `Execution`, `Breach`, `Archive`), stage, or priority. |
+| | `campaigns_get_task_details`| Deep relational inspection returning subtask trees, linked strikes, and metadata. |
+| | `campaigns_create_task` | Create a new project with priority, deadline, optional atomic subtasks, and briefing. |
+| | `campaigns_update_task` | Update project fields (state transitions, deadlines, stages, descriptions) with referential safety. |
+| | `campaigns_delete_task` | Cascading removal of a project and its linked subtasks and strikes. |
+| **🎯 Daily Strikes** | `campaigns_list_strikes` | List daily action items by execution date (`DD-MM-YYYY` or relative like `today`), status, or Minister. |
+| | `campaigns_create_strike` | Create a daily action directive assigned to a Minister with 1-shot task name resolution. |
+| | `campaigns_update_strike` | Mark strike `Neutralized`, reschedule dates, or update operational notes. |
+| | `campaigns_delete_strike` | Remove a strike from the schedule. |
+| **🌳 Milestones & Tags**| `campaigns_manage_subtask` | Create, update status (`Initiated`, `Doing`, `Completed`, `Failed`), or remove subtask milestones. |
+| | `campaigns_manage_tag` | Attach or detach taxonomy tags (`WORK`, `FINANCE`, `RESEARCH`, `LEGAL`). |
+| **💰 Treasury & Cash Flow**| `campaigns_get_treasury_dashboard`| 1-shot financial summary: payables due, receivables due, 7d/30d horizons, and net balance. |
+| | `campaigns_list_treasury` | Query obligations by flow type (`Payable`/`Receivable`), state (`Open`/`Closed`), status, or contact. |
+| | `campaigns_manage_treasury` | Create obligations, record partial payments (`record_payment`), or settle balances. |
+| **👥 Counterparties**| `campaigns_list_counterparties` | Contact directory with live computed net balances, total receivables, and payables. |
+| | `campaigns_get_counterparty_dossier` | Complete 360° counterparty relationship profile and chronological payment history. |
+| | `campaigns_manage_counterparty` | Register or update individual and business profiles. |
+| **⚡ SQL Engine** | `campaigns_execute_sql` | Execute parameterized SQL queries and transactions with automatic rollback safety. |
 
 ---
 
 ## 🚀 Quickstart & Setup
 
-### 1. Installation
-```bash
-# Clone the repository
-git clone https://github.com/karansinghverma979/antigravity-campaigns-mcp.git ~/.gemini/campaigns-mcp
-cd ~/.gemini/campaigns-mcp
-```
+### Pathway A: Google Antigravity Plugin (Recommended)
 
-### 2. Verify Server
-```bash
-python -c "import server; print('MCP Server verified successfully!')"
-```
+1. Clone or copy into your local Antigravity plugins directory:
+   ```bash
+   git clone https://github.com/karansinghverma979/antigravity-campaigns-plugin.git ~/.gemini/config/plugins/campaigns-plugin
+   ```
+2. Antigravity automatically detects `plugin.json`, loads the `campaigns` skill (`skills/campaigns/SKILL.md`), and registers the autonomous agent (`agents/campaigns.md`).
 
----
+### Pathway B: Universal FastMCP Server (Claude Desktop, Cursor, Zed)
 
-## ⚙️ Client Configurations
+1. Install dependencies:
+   ```bash
+   pip install mcp>=1.0.0
+   ```
+2. Initialize database:
+   ```bash
+   python mcp/init_db.py
+   ```
+3. Add to your client config:
 
-### Antigravity CLI
-Add to your `mcp_config.json` or Antigravity MCP settings:
-
+#### For Antigravity `mcp_config.json`:
 ```json
 {
   "mcpServers": {
     "campaigns-mcp": {
       "command": "python",
       "args": [
-        "%USERPROFILE%\\.gemini\\campaigns-mcp\\server.py"
-      ]
+        "C:\\Users\\<YourUsername>\\.gemini\\config\\plugins\\campaigns-plugin\\mcp\\server.py"
+      ],
+      "disabled": false
     }
   }
 }
 ```
 
-### Claude Desktop
-Add to `%APPDATA%\Claude\claude_desktop_config.json` (Windows) or `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS):
-
+#### For Claude Desktop (`claude_desktop_config.json`):
 ```json
 {
   "mcpServers": {
-    "campaigns-mcp": {
+    "campaigns": {
       "command": "python",
       "args": [
-        "/path/to/campaigns-mcp/server.py"
+        "/path/to/antigravity-campaigns-plugin/mcp/server.py"
       ]
     }
   }
@@ -213,28 +200,17 @@ Add to `%APPDATA%\Claude\claude_desktop_config.json` (Windows) or `~/Library/App
 
 ---
 
-## 📐 Tactical Guardrails & Invariants
+## 🔒 Security, Privacy & OpenSSF Standards
 
-1. **Strike Completion Standard**: Completed strikes are strictly marked as **`Neutralized`** (never `Completed`, `Done`, etc.).
-2. **Date Format Standard**: Strict calendar format **`DD-MM-YYYY`** with zero time/hour/second concept.
-3. **Capitalized Case Standard**: All closed enums (`Tasks.state`/`stage`/`priority`, `Strikes.status`/`assigned`, `Subtasks.status`, `Treasury.state`/`status`/`flow_type`/`priority`, `Counterparties.activity`) store strictly Capitalized Case values. Tags are the sole exception and must be `UPPERCASE`.
-4. **Execution State Mandate**: Any campaign in `state = 'Execution'` strictly requires a valid `deadline`.
-5. **Minister Allocation**: All strikes must be assigned to an active Minister (`Adhipati`, `Bhakta`, `Antaryami`, `Jigyasu`).
-6. **Relational Integrity**: Treasury obligations strictly enforce foreign keys referencing `Counterparties(id)`.
-7. **Markdown-Lite Text Formatting Protocol**: All multi-line text fields (`Tasks.description`, `Tasks.end_note`, `Strikes.notes`, `Treasury.opened_note`, `Treasury.closed_note`, `Counterparties.comment`) render in the UI via native Markdown-Lite parsers. Text must be kept **short, simple, crisp, and well-formatted** using standard markdown (clean `- ` bullet lists, `1. ` numbered lists, `> ` blockquotes, and `**bold**` keys) without essay bloat or visual clutter.
-
----
-
-## 🧠 Official Companion Skill & Autonomous Governance
-
-This MCP server is natively governed and orchestrated by the **[`campaigns`](https://github.com/karansinghverma979/antigravity-custom-skills/blob/main/campaigns/SKILL.md)** skill from the **[`antigravity-custom-skills`](https://github.com/karansinghverma979/antigravity-custom-skills)** suite.
+- **Zero Machine Path Leaks**: Fully supports `CAMPAIGNS_DB_PATH` environment variable with dynamic fallback across Windows (`%APPDATA%`) and Linux/macOS (`~/.local/share/`).
+- **Data Isolation**: Database files (`*.sqlite`, `*.db`) are permanently quarantined outside git tracking.
+- **OpenSSF Hardened Workflows**: All GitHub Actions workflows declare `permissions: contents: read` and pin dependencies to immutable 40-character commit SHAs.
+- **Vulnerability Disclosure**: Governed by standard [SECURITY.md](SECURITY.md) guidelines.
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repository if you run AI-driven tactical operations!
-
-<b>Maintained by <a href="https://github.com/karansinghverma979">Karan Singh Verma</a> · Open-Source MIT License</b>
+<b>Maintained by <a href="https://github.com/karansinghverma979">Karan Singh Verma</a> · Released under the MIT License</b>
 
 </div>

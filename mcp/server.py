@@ -14,7 +14,12 @@ import datetime
 import traceback
 import contextlib
 
-DB_PATH = os.path.expandvars(r"%APPDATA%\Campaigns\Database\campaigns.sqlite")
+DB_PATH = os.environ.get("CAMPAIGNS_DB_PATH")
+if not DB_PATH:
+    if os.name == "nt":
+        DB_PATH = os.path.expandvars(r"%APPDATA%\Campaigns\Database\campaigns.sqlite")
+    else:
+        DB_PATH = os.path.expanduser("~/.local/share/campaigns/campaigns.sqlite")
 
 # -----------------------------------------------------------------------------
 # Strict Canonical Whitelist Definitions (From Void/Campaigns v4.0.0)

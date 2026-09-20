@@ -12,7 +12,12 @@ SCHEMA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "schema.s
 
 def init_database(db_path=None, seed_demo=True):
     if not db_path:
-        db_path = os.path.expandvars(r"%APPDATA%\Campaigns\Database\campaigns.sqlite")
+        db_path = os.environ.get("CAMPAIGNS_DB_PATH")
+        if not db_path:
+            if os.name == "nt":
+                db_path = os.path.expandvars(r"%APPDATA%\Campaigns\Database\campaigns.sqlite")
+            else:
+                db_path = os.path.expanduser("~/.local/share/campaigns/campaigns.sqlite")
     
     db_dir = os.path.dirname(os.path.abspath(db_path))
     os.makedirs(db_dir, exist_ok=True)
