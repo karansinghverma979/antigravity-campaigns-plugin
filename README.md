@@ -49,18 +49,17 @@
 
 <br/>
 
-## 📖 The Story Behind Campaigns: Why We Built This
+## 📖 The Story Behind Campaigns & The Sovereign Ecosystem
 
-Heavyweight productivity platforms and complex enterprise managers (like Stratagem) offer deep features, but come at a steep operational cost: heavy system resource consumption, slow database latencies, background bloat, and clunky interfaces.
+Heavyweight productivity platforms and complex enterprise managers (like **[Stratagem](https://github.com/karansinghverma979/Stratagem)**) offer deep features, but come at a steep operational cost: heavy system resource consumption, slow database latencies, and clunky interfaces.
 
 **Campaigns was born from a simple realization**:
 > *You don't need gigabytes of electron bloat or cloud vendor lock-in to achieve peak personal execution. You need a rock-solid, sub-millisecond local relational state machine that your AI assistant can drive effortlessly.*
 
-Campaigns strikes the perfect balance:
-- **Ultra-Lightweight**: Instantaneous execution via a single local SQLite database in WAL mode.
-- **Zero Resource Waste**: Runs locally on your machine with near-zero RAM footprint.
-- **Sovereign & Private**: 100% of your goals, contacts, and financial records remain on your local disk.
-- **Dual Personality**: Use straightforward productivity terminology or high-discipline tactical terminology—both map to the same clean relational schema.
+The Campaigns architecture provides a unified ecosystem across three specialized tools:
+* **🖥️ [Campaigns Desktop Command Center](https://github.com/karansinghverma979/Campaigns)**: High-speed, local-first Svelte 5 & Electron desktop UI for human operators.
+* **🤖 [Antigravity Campaigns Plugin](https://github.com/karansinghverma979/antigravity-campaigns-plugin)**: Autonomous AI FastMCP server operating directly on the exact same SQLite database.
+* **♟️ [Stratagem Command Matrix](https://github.com/karansinghverma979/Stratagem)**: Deep cinematic macro-strategic life planning and institutional analysis matrix.
 
 ---
 
