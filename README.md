@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.svg" alt="Antigravity Campaigns Logo" width="128" height="128" />
+
 # ⚔️ Antigravity Campaigns Plugin
 
 ### *High-Speed Strategic Task Engine, Tactical Strike Coordinator & Double-Entry Treasury HUD for AI Agents*
