@@ -80,6 +80,8 @@ Whether you think like a software project manager or a tactical operational comm
 
 ## 🏛️ System Architecture
 
+> **Deep Developer Documentation**: For complete relational DDL schemas, ER diagrams, strict state machines, and token minimization protocols, see **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
+
 <p align="center">
   <img src="assets/architecture.svg" alt="Campaigns Architecture" width="100%" />
 </p>
