@@ -79,6 +79,10 @@ Whether you think like a software project manager or a tactical operational comm
 
 ## 🏛️ System Architecture
 
+<p align="center">
+  <img src="assets/architecture.svg" alt="Campaigns Architecture" width="100%" />
+</p>
+
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                       GOOGLE ANTIGRAVITY AGENT / MCP HOST                   │

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="accent-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="600" fill="url(#bg-grad)" rx="16"/>
+
+  <!-- Title & Header -->
+  <text x="50" y="50" fill="#F9FAFB" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700">⚔️ ANTIGRAVITY CAMPAIGNS PLUGIN ARCHITECTURE</text>
+  <text x="50" y="75" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Authoritative SQLite State-Machine, 4-Minister Model &amp; Treasury HUD</text>
+
+  <!-- Tier 1: Host Clients -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="110" width="900" height="70" rx="10" fill="url(#card-grad)" stroke="#374151" stroke-width="1.5"/>
+    <text x="75" y="142" fill="#E5E7EB" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600">AI AGENT CLIENT HOSTS</text>
+    <text x="75" y="162" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Google Antigravity CLI · Claude Desktop · Cursor · Zed · Native MCP Hosts</text>
+    <rect x="760" y="125" width="160" height="38" rx="6" fill="#1F2937" stroke="#4B5563" stroke-width="1"/>
+    <text x="785" y="149" fill="#60A5FA" font-family="monospace" font-size="12" font-weight="600">JSON-RPC / stdio</text>
+  </g>
+
+  <!-- Connector Line -->
+  <line x1="500" y1="180" x2="500" y2="220" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="495,215 500,225 505,215" fill="#60A5FA"/>
+
+  <!-- Tier 2: MCP Server Core -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="225" width="900" height="200" rx="10" fill="url(#card-grad)" stroke="#4B5563" stroke-width="1.5"/>
+    <rect x="50" y="225" width="900" height="36" rx="10" fill="#1F2937"/>
+    <text x="75" y="249" fill="#F87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">FAST-MCP SERVER ENGINE (mcp/server.py · 20 Native Operations)</text>
+    
+    <!-- Sub-boxes for Modules -->
+    <!-- Tasks Module -->
+    <rect x="75" y="280" width="160" height="120" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="75" y="280" width="160" height="6" fill="url(#accent-red)" rx="3"/>
+    <text x="90" y="305" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Projects Lifecycle</text>
+    <text x="90" y="325" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· 4 State Pipeline</text>
+    <text x="90" y="343" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Atomic Subtasks</text>
+    <text x="90" y="361" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· 85% Token Diet</text>
+    <text x="90" y="380" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Relative Dates</text>
+
+    <!-- Daily Strikes Module -->
+    <rect x="255" y="280" width="160" height="120" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="255" y="280" width="160" height="6" fill="url(#accent-blue)" rx="3"/>
+    <text x="270" y="305" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Daily Strikes</text>
+    <text x="270" y="325" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· 1-Shot Foreign Keys</text>
+    <text x="270" y="343" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Status: Neutralized</text>
+    <text x="270" y="361" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Date-Scoped Lists</text>
+    <text x="270" y="380" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Minister Routing</text>
+
+    <!-- 4-Minister Governance -->
+    <rect x="435" y="280" width="160" height="120" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="435" y="280" width="160" height="6" fill="url(#accent-purple)" rx="3"/>
+    <text x="450" y="305" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">4-Minister Model</text>
+    <text x="450" y="325" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Adhipati (Strategy)</text>
+    <text x="450" y="343" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Bhakta (Execution)</text>
+    <text x="450" y="361" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Antaryami (Mind)</text>
+    <text x="450" y="380" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Jigyasu (Learning)</text>
+
+    <!-- Treasury & Counterparties -->
+    <rect x="615" y="280" width="160" height="120" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="615" y="280" width="160" height="6" fill="url(#accent-green)" rx="3"/>
+    <text x="630" y="305" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Treasury HUD</text>
+    <text x="630" y="325" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· 7d &amp; 30d Runway</text>
+    <text x="630" y="343" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Inflow / Outflow</text>
+    <text x="630" y="361" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Partial Settlements</text>
+    <text x="630" y="380" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Counterparty Dossier</text>
+
+    <!-- Integrity Auditor -->
+    <rect x="795" y="280" width="130" height="120" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="795" y="280" width="130" height="6" fill="#F59E0B" rx="3"/>
+    <text x="805" y="305" fill="#F3F4F6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Health Auditor</text>
+    <text x="805" y="325" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Orphan Scans</text>
+    <text x="805" y="343" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Stale Strikes</text>
+    <text x="805" y="361" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· Drift Detection</text>
+    <text x="805" y="380" fill="#9CA3AF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">· 1-Shot Reports</text>
+  </g>
+
+  <!-- Connector Line -->
+  <line x1="500" y1="425" x2="500" y2="475" stroke="#10B981" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="495,470 500,480 505,470" fill="#10B981"/>
+
+  <!-- Tier 3: Storage & Persistence -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="480" width="900" height="90" rx="10" fill="url(#card-grad)" stroke="#374151" stroke-width="1.5"/>
+    <text x="75" y="515" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">AUTHORITATIVE RELATIONAL SQLITE ENGINE (WAL MODE)</text>
+    <text x="75" y="538" fill="#9CA3AF" font-family="monospace" font-size="12">%APPDATA%\Campaigns\Database\campaigns.sqlite (Windows) · ~/.local/share/campaigns/ (Linux/macOS)</text>
+    <text x="75" y="555" fill="#6B7280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">PRAGMA journal_mode=WAL · PRAGMA foreign_keys=ON · Double-Entry Ledger · Zero Leaks Outside Working Tree</text>
+    <rect x="760" y="505" width="160" height="40" rx="6" fill="#064E3B" stroke="#059669" stroke-width="1"/>
+    <text x="785" y="530" fill="#6EE7B7" font-family="monospace" font-size="12" font-weight="600">&lt; 1ms Latency</text>
+  </g>
+</svg>
