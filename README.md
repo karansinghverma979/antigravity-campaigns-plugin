@@ -9,7 +9,7 @@
 <br/>
 
 <a href="https://github.com/karansinghverma979/antigravity-campaigns-plugin">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E53935&center=true&vCenter=true&multiline=true&width=780&height=100&lines=Lightweight+Tactical+Project+Management;Hierarchical+Checkpoints+%26+Daily+Directives;Double-Entry+Cash+Flow+Treasury+%26+Counterparty+Ledger;Sub-Millisecond+SQLite+WAL+Engine+(Zero-Bloat)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=E53935&center=true&vCenter=true&multiline=true&width=780&height=150&lines=Lightweight+Tactical+Project+Management;Hierarchical+Checkpoints+%26+Daily+Directives;Double-Entry+Cash+Flow+Treasury+%26+Counterparty+Ledger;Sub-Millisecond+SQLite+WAL+Engine+(Zero-Bloat)" alt="Typing SVG" />
 </a>
 
 <br/>
