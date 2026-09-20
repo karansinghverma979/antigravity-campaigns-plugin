@@ -1,5 +1,23 @@
 {
   "name": "campaigns-plugin",
   "description": "Strategic command center, daily strike execution engine, financial treasury HUD, and Obsidian SQLite bridge for Google Antigravity",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "author": "Karan Singh Verma",
+  "license": "MIT",
+  "homepage": "https://github.com/karansinghverma979/antigravity-campaigns-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karansinghverma979/antigravity-campaigns-plugin.git"
+  },
+  "keywords": [
+    "antigravity",
+    "plugin",
+    "mcp",
+    "campaigns",
+    "strikes",
+    "treasury",
+    "sqlite",
+    "wal",
+    "productivity"
+  ]
 }

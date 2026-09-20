@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "campaigns": {
+      "command": "python",
+      "args": [
+        "mcp/server.py"
+      ],
+      "disabled": false
+    }
+  }
+}
