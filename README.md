@@ -204,6 +204,34 @@ Autonomous agents face tight context windows and round-trip latency. Campaigns i
 }
 ```
 
+## 🗄️ Database Lifecycle, Invariants & Real-Time GUI Synchronization
+
+### 1. Zero-Precondition Auto-Creation
+If `campaigns.sqlite` does not exist on your computer, the MCP server **automatically provisions the entire database on cold boot**:
+* Auto-creates the database directory (`%APPDATA%\Campaigns\Database\` on Windows, `~/.local/share/campaigns/` on Linux/macOS, or via `CAMPAIGNS_DB_PATH`).
+* Auto-executes the canonical DDL schema, provisioning all 6 tables (`Tasks`, `Tags`, `Subtasks`, `Strikes`, `Counterparties`, `Treasury`) and 13 indexes in `<1ms`.
+* Zero manual SQL scripts or pre-configuration needed.
+
+### 2. Strict Schema Rules & Allowed Entries
+All agent actions are enforced against canonical business invariants:
+* **Zero-Time Calendar Dates**: Strictly `DD-MM-YYYY` (e.g. `20-09-2026`). Timestamps, hours/minutes, and ISO strings are strictly banned. Natural dates (`today`, `tomorrow`, `+3d`, `monday`, `eom`) auto-resolve to `DD-MM-YYYY`.
+* **Task Priorities**: Strictly 3 levels: `'High'`, `'Medium'`, `'Low'`.
+* **State & Stage Matrix**:
+  * `Arsenal` ➔ `['RawIntel', 'Strategizing']`
+  * `Execution` ➔ `['Active', 'Executing']`
+  * `Breach` ➔ `['Overdue', 'Breach']`
+  * `Archive` ➔ `['Victory', 'Aborted']`
+* **Strike Statuses**: Capitalized case: `'Standby'`, `'Engaged'`, `'Neutralized'`, `'Aborted'`, `'Pending'`, `'Template'`, `'Undated'`. Finished strikes are saved strictly as `'Neutralized'`.
+* **Subtasks**: Capitalized case (`'Initiated'`, `'Doing'`, `'Completed'`, `'Failed'`). Creation date is strictly `created_at`.
+* **Treasury**: Symmetrical `'Payable'` and `'Receivable'` flows with linked counterparties.
+* **Ministers**: 4 focal disciplines: `'Adhipati'`, `'Bhakta'`, `'Antaryami'`, `'Jigyasu'`.
+* **Tags**: Strictly single-word `UPPERCASE` with underscores (e.g. `MOTOR_WINDING`).
+
+### 3. Real-Time Desktop GUI Synchronization (`Ctrl+R`)
+If you run the **Campaigns Electron Desktop Application** alongside Antigravity:
+* Both systems execute concurrently on SQLite WAL (Write-Ahead Log) without file locking.
+* When AI agents mutate projects, strikes, or cash flow via MCP, press **`Ctrl+R`** in the Campaigns Desktop App (or select **CAMPAIGNS Menu ➔ Hard Reload (`Ctrl+R`)**) to immediately rehydrate all UI stores from disk.
+
 ---
 
 ## 🔒 Security, Privacy & OpenSSF Standards

@@ -74,6 +74,120 @@ VALID_TREASURY_CATEGORIES = [
     "Other"
 ]
 
+SCHEMA_DDL = """
+CREATE TABLE IF NOT EXISTS Tasks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  origin_date TEXT NOT NULL,
+  modification_date TEXT,
+  priority TEXT NOT NULL,
+  state TEXT NOT NULL,
+  stage TEXT NOT NULL,
+  deadline TEXT,
+  initiated_at TEXT,
+  reschedule_count INTEGER DEFAULT 0,
+  reschedule_1 TEXT,
+  reschedule_2 TEXT,
+  ended_date TEXT,
+  end_note TEXT,
+  days_spent INTEGER,
+  is_breached_extracted INTEGER DEFAULT 0,
+  description TEXT DEFAULT ''
+);
+
+CREATE TABLE IF NOT EXISTS Tags (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  task_id INTEGER DEFAULT NULL,
+  tag_name TEXT NOT NULL,
+  FOREIGN KEY (task_id) REFERENCES Tasks(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Subtasks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  task_id INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  status TEXT NOT NULL,
+  FOREIGN KEY (task_id) REFERENCES Tasks(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS Strikes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  execution_date TEXT NOT NULL,
+  assigned TEXT DEFAULT 'Bhakta',
+  status TEXT DEFAULT 'Standby',
+  notes TEXT,
+  task_id INTEGER DEFAULT NULL,
+  subtask_id INTEGER DEFAULT NULL,
+  reschedule_count INTEGER DEFAULT 0,
+  recurrence_id TEXT DEFAULT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Counterparties (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL UNIQUE,
+  relation TEXT NOT NULL DEFAULT 'Personal',
+  activity TEXT NOT NULL DEFAULT 'Active',
+  contact TEXT,
+  comment TEXT,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Treasury (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  counterparty_id INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  flow_type TEXT NOT NULL DEFAULT 'Payable',
+  category TEXT NOT NULL DEFAULT 'Borrowed',
+  amount REAL NOT NULL,
+  paid_amount REAL NOT NULL DEFAULT 0.0,
+  priority TEXT NOT NULL DEFAULT 'Medium',
+  state TEXT NOT NULL DEFAULT 'Open',
+  status TEXT NOT NULL DEFAULT 'In Progress',
+  opened_at TEXT NOT NULL,
+  opened_mode TEXT NOT NULL DEFAULT 'UPI',
+  opened_reference TEXT,
+  opened_note TEXT,
+  promise_date TEXT,
+  expected_date TEXT,
+  closed_at TEXT,
+  closed_mode TEXT,
+  closed_reference TEXT,
+  closed_note TEXT,
+  recurrence_id TEXT DEFAULT NULL,
+  campaign_id INTEGER DEFAULT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (counterparty_id) REFERENCES Counterparties(id) ON DELETE CASCADE,
+  FOREIGN KEY (campaign_id) REFERENCES Tasks(id) ON DELETE SET NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_tags_task_id ON Tags(task_id);
+CREATE INDEX IF NOT EXISTS idx_tags_tag_name ON Tags(tag_name);
+CREATE INDEX IF NOT EXISTS idx_subtasks_task_id ON Subtasks(task_id);
+CREATE INDEX IF NOT EXISTS idx_tasks_state ON Tasks(state);
+CREATE INDEX IF NOT EXISTS idx_strikes_execution_date ON Strikes(execution_date);
+CREATE INDEX IF NOT EXISTS idx_strikes_status ON Strikes(status);
+CREATE INDEX IF NOT EXISTS idx_strikes_task_id ON Strikes(task_id);
+CREATE INDEX IF NOT EXISTS idx_strikes_subtask_id ON Strikes(subtask_id);
+CREATE INDEX IF NOT EXISTS idx_counterparties_name ON Counterparties(name);
+CREATE INDEX IF NOT EXISTS idx_counterparties_activity ON Counterparties(activity);
+CREATE INDEX IF NOT EXISTS idx_treasury_counterparty_id ON Treasury(counterparty_id);
+CREATE INDEX IF NOT EXISTS idx_treasury_state ON Treasury(state);
+CREATE INDEX IF NOT EXISTS idx_treasury_status ON Treasury(status);
+"""
+
+_SCHEMA_INITIALIZED = False
+
+def ensure_database_schema(conn):
+    global _SCHEMA_INITIALIZED
+    if _SCHEMA_INITIALIZED:
+        return
+    conn.executescript(SCHEMA_DDL)
+    _SCHEMA_INITIALIZED = True
+
 @contextlib.contextmanager
 def get_db():
     db_dir = os.path.dirname(DB_PATH)
@@ -85,6 +199,7 @@ def get_db():
     conn.execute("PRAGMA synchronous = NORMAL;")
     conn.execute("PRAGMA busy_timeout = 10000;")
     conn.execute("PRAGMA foreign_keys = ON;")
+    ensure_database_schema(conn)
     try:
         yield conn
     finally:
