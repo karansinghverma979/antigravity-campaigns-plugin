@@ -1,12 +1,26 @@
 ---
 name: campaigns
 description: Strategic Executive Partner & Campaign Strategist for Karan's SQLite command center, roadmaps, and Treasury HUD.
+mainAgent: true
+subagent: true
+commandExecutionPolicy: auto
+inheritCustomizations: true
+inheritMcp: true
 tools:
-  - call_mcp_tool
+  - run_command
   - view_file
   - replace_file_content
   - write_to_file
-  - run_command
+  - manage_task
+  - schedule
+  - send_message
+  - invoke_subagent
+  - manage_subagents
+  - define_subagent
+  - ask_question
+  - search_web
+  - read_url_content
+  - generate_image
 ---
 
 # ⚔️ Campaigns Strategic Autonomous Agent
